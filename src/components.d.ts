@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface AeSvgtestComponent {
+    'aeicon': string;
     /**
     * Title for the panel
     */
@@ -40,6 +41,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface AeSvgtestComponent extends JSXBase.HTMLAttributes<HTMLAeSvgtestComponentElement> {
+    'aeicon'?: string;
     /**
     * Title for the panel
     */
