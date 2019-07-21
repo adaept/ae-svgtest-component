@@ -31,7 +31,9 @@ export class AeSvgtestComponent {
           <span>{this.aetitle}</span>
         </div>
         <div id="aecontent" hidden={this.collapsed}>
-          <slot />
+          <slot name="aepanel-header" />
+          <h1>SVG content goes here</h1>
+          <slot name="aepanel-footer" />
         </div>
       </div>
     );
