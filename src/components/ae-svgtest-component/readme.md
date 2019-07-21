@@ -1,4 +1,4 @@
-# ae-panel-component
+# ae-svgtest-component
 
 <!-- Auto Generated Below -->
 
