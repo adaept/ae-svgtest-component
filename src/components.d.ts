@@ -15,6 +15,10 @@ export namespace Components {
     */
     'aetitle': string;
     /**
+    * SVG content
+    */
+    'svgcontent': string;
+    /**
     * Show/Hide the panel
     */
     'toggle': () => Promise<void>;
@@ -40,6 +44,10 @@ declare namespace LocalJSX {
     * Title for the panel
     */
     'aetitle'?: string;
+    /**
+    * SVG content
+    */
+    'svgcontent'?: string;
   }
 
   interface IntrinsicElements {
