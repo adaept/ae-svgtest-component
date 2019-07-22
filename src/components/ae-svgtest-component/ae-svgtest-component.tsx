@@ -50,6 +50,8 @@ export class AeSvgtestComponent {
   render() {
     return (
       <div>
+        <p>iconify-icon test 1</p>
+        <iconify-icon data-icon={alert} title="Alert"></iconify-icon>
         <div id="aeheader" onClick={this.toggle.bind(this)}>
           <span>{this.aetitle}</span>
         </div>
@@ -57,6 +59,7 @@ export class AeSvgtestComponent {
           <slot name="aepanel-header" />
           <div innerHTML={this.svgcontent}></div>
           <slot name="aepanel-footer" />
+          <p>iconify-icon test 2</p>
           <iconify-icon data-icon={alert} title="Alert"></iconify-icon>
           {/*
           <p>Red home icon: <span class="iconify" data-icon="mdi:home"></span></p>
