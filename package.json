@@ -20,10 +20,8 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "dependencies": {
-    "@iconify/iconify": "^1.0.3"
-  },
   "devDependencies": {
+    "@iconify/iconify": "^1.0.3",
     "@iconify/icons-mdi-light": "^1.0.0",
     "@iconify/icons-twemoji": "^1.0.1",
     "@stencil/core": "^1.1.7",

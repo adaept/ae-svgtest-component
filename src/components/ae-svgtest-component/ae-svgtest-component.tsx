@@ -1,6 +1,6 @@
 import { Component, Prop, h, State, Method } from '@stencil/core';
 
-import { alert } from '@iconify/icons-mdi-light/alert';
+import alert from '@iconify/icons-mdi-light/alert';
 
 //import firstPlaceMedal from "@iconify/icons-twemoji/1st-place-medal";
 //import airplane from "@iconify/icons-twemoji/airplane";
@@ -24,9 +24,6 @@ export class AeSvgtestComponent {
    */
   @Prop() svgcontent: string;
 
-
-  @Prop() aeicon: string;
-
   /**
    * State of the panel - visible or hidden
    */
@@ -48,8 +45,6 @@ export class AeSvgtestComponent {
       svgxmlns + '<path d="M17.067 117.454L.039 131.27c10.836 11.631 35.604-2.91 66.564-21.818 30.962-18.902 34.06-56.715 24.771-78.528-1.327-3.107-2.727-6.117-4.281-8.954 6.618-4.878 18.504-12.821 27.5-14.314 13.158-2.184 13.934 39.264 9.288 80.712h9.29c3.095-32.722 4.64-69.08-5.42-82.167-9.248-12.026-24.38-5.607-44.19 10.173-9.778-13.206-26.35-17.95-65.467 6.306l4.133 5.816c19.608-12.597 37.145-16.478 48.5 9.698 11.359 26.179 2.057 53.32-14.452 67.862-16.507 14.545-30.947 11.158-39.208 11.397" fill="currentColor"/></svg>';
     this.svgcontent = mysvg;
 
-    this.aeicon = alert;
-
   }
 
   render() {
@@ -62,7 +57,7 @@ export class AeSvgtestComponent {
           <slot name="aepanel-header" />
           <div innerHTML={this.svgcontent}></div>
           <slot name="aepanel-footer" />
-          <iconify-icon data-icon={this.aeicon} title="Alert"></iconify-icon>
+          <iconify-icon data-icon={alert} title="Alert"></iconify-icon>
           {/*
           <p>Red home icon: <span class="iconify" data-icon="mdi:home"></span></p>
           <p class="light-blue-block">
