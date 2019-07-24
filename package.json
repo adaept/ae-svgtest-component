@@ -21,7 +21,6 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
-    "@iconify/iconify": "^1.0.3",
     "@iconify/icons-mdi-light": "^1.0.0",
     "@iconify/icons-twemoji": "^1.0.1",
     "@stencil/core": "^1.1.7",
@@ -31,5 +30,6 @@
     "jest-cli": "24.8.0",
     "puppeteer": "1.17.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
